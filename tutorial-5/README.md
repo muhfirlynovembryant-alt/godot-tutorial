@@ -322,10 +322,12 @@ tutorial ini di repositori milik pribadi. **Jangan _push_ atau membuat Merge
 Request ke repositori _upstream_ materi tutorial kecuali jika kamu ingin
 kontribusi materi atau memperbaiki materi yang sudah dipublikasikan!**
 
-Tenggat waktu pengumpulan adalah **Sabtu, 12 Oktober 2019, pukul 21:00**.
+Tenggat waktu pengumpulan adalah **Jumat, 23 Oktober 2020, pukul 21:00**.
 
 ## Referensi
 
 - [Main Menu](https://docs.godotengine.org/en/3.1/getting_started/step_by_step/ui_main_menu.html)
 - [GUI Design](https://docs.godotengine.org/en/3.1/getting_started/step_by_step/ui_game_user_interface.html)
 - [Kenney Assets](https://www.kenney.nl/assets/platformer-pack-redux)
+- Materi tutorial pengenalan Godot Engine, kuliah Game Development semester
+  gasal 2020/2021 Fakultas Ilmu Komputer Universitas Indonesia.
