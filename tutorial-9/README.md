@@ -100,7 +100,7 @@ Selanjutnya, kita ingin agar hujan abu kita memiliki kecepatan yang lebih cepat 
 - Properti ```Gravity``` melambangkan besarang gravitasi yang diterima oleh titik particle kita.
 - Properti ```Velocity``` melambangkan kecepatan awal titik particle ketika muncul di game.
 
-![Spread, Gravity, and Velocity](images/spread-gravity-velocity.png)
+![Spread, Gravity, and Velocity](images/spread-gravity-velocity.jpg)
 
 Hmmm, kenapa particle yang sekarang ada pada awalnya muncul ke arah kanan terlebih dahulu? Itu karena dengan kita mengubah nilai ```Velocity``` menjadi lebih dari 0, particle yang kita punya akan dikenakan kecepatan sesuai dengan nilai ```Velocity``` ke arah kanan saja. Oleh karena itu kita harus merotasi particle kita agar arah particle ke arah kiri. Pada tab ```Transform``` pada Node2D, ubah rotation degrees menjadi 180. Lalu, pada tab ```Drawing```, ubah ```Local Coord``` menjadi off.
 - Properti ```Transform``` merupakan posisi dari Node2D.
@@ -143,7 +143,7 @@ Selanjutnya, berbeda dengan sebelumnya, sekarang kita tidak ingin jumlah particl
 
 Selanjutnya, agar particle muncul ke segala arah dan terbang ke atas, ubah ```Gravity``` nilai y menjadi -200, ```Spread``` menjadi 180 derajat, dan ```Initial Velocity``` menjadi 50.
 
-![Spread and Gravity](images/trail-spread-gravity.png)
+![Spread and Gravity](images/trail-spread-gravity.jpg)
 
 Selanjutya, agar particle tidak hanya muncul dari satu titik, ubah ```Emission Shape``` menjadi box dengan nilai x 30. Lalu pindahkan pula node Particles2D ke bagian kaki player, pada tab ```Transform``` ubah nilai y menjadi 30.
 
