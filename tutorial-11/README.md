@@ -132,7 +132,7 @@ tutorial ini di repositori milik pribadi. **Jangan _push_ atau membuat Merge
 Request ke repositori _upstream_ materi tutorial kecuali jika kamu ingin
 kontribusi materi atau memperbaiki materi yang sudah dipublikasikan!**
 
-Tenggat waktu pengumpulan adalah **Sabtu, 2 Januari 2021, pukul 21:00**.
+Tenggat waktu pengumpulan adalah **Minggu, 3 Januari 2021, pukul 21:00**.
 
 ## Referensi
 
