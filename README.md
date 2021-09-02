@@ -4,8 +4,8 @@
 
 ## Lisensi
 
-Copyright (c) 2019 Tim Pengajar Kuliah Game Development Fakultas Ilmu Komputer
-Universitas Indonesia.
+Copyright (c) 2021 Tim Pengajar Kuliah Game Development Fakultas Ilmu
+Komputer Universitas Indonesia.
 
 Lisensi untuk menggunakan, menggubah, memperbaiki, dan membuat ciptaan turunan
 dari koleksi materi tutorial ini diatur dalam dua lisensi: [Creative Commons Attribution Share-Alike 4.0 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -66,11 +66,11 @@ Saatnya langsung masuk ke sesi materi sesungguhnya.
 >   kertas
 
 Pada kuliah Game Development ini, kamu akan dilatih untuk berpikir dan menyelesaikan masalah dengan pendekatan yang bisa dibilang agak
-_out-of-the_box_. Kuliah ini bukan seperti kuliah pemrograman-pemrograman
+_out-of-the-box_. Kuliah ini bukan seperti kuliah pemrograman-pemrograman
 dasar yang mengharuskan peserta kuliah membuat program untuk mengolah masukan
 dan mencetak keluaran sama persis seperti yang tercantum di dokumen spesifikasi
 tugas. Kebenaran dan kesesuaian dengan spesifikasi memang penting, namun kuliah
-ini juga mengharapkan solusi yang unik dan kreatif.
+ini juga mengharapkan solusi yang **unik** dan **kreatif**.
 
 Salah satu kegiatan kreatif yang akan disimulasikan hari ini adalah proses
 pencarian ide dalam merancang game. Mungkin beberapa dari peserta kuliah sudah
@@ -78,7 +78,7 @@ memiliki ide game yang ingin dikembangkan pada kuliah ini. Mungkin ada juga
 peserta kuliah yang masih mencari-cari ide. Terlepas apakah sudah ada ide atau
 belum, mari kita coba bersama latihan berikut untuk merancang sebuah game!
 
-Pertama, coba kita saling _sharing_ terlebih dahulu. Coba jawab
+Pertama, coba kita saling _sharing_ terlebih dahulu. Jawab
 pertanyaan-pertanyaan berikut dan berbagi jawabannya dengan rekan-rekan
 sekelas:
 
@@ -169,7 +169,7 @@ bergabung di kuliah Game Development!
 Harap kumpulkan:
 
 - Nama akun [GitLab.com](https://gitlab.com) kamu di slot pengumpulan **khusus akun GitLab** di Scele.
-- Dokumen PDF berisi jawaban tertulis latihan-latihan selama tutorial dan foto
-  corat-coret kertas di slot pengumpulan **khusus hasil tutorial** di Scele.
+- Dokumen PDF berisi jawaban tertulis latihan-latihan selama tutorial, termasuk 
+  _scan_/foto corat-coret kertas di slot pengumpulan **khusus hasil tutorial** di Scele.
 
-Tenggat waktu pengumpulan adalah **Jumat, 18 September 2020, pukul 21:00**.
+Tenggat waktu pengumpulan adalah **6 September 2021 pukul 21:00**.
