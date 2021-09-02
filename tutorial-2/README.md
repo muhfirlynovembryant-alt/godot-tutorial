@@ -337,7 +337,7 @@ tutorial ini di repositori milik pribadi. Apabila kamu mengerjakan latihan
 ekstra, pastikan _scene_ pesawat dan landasan baru juga sudah masuk ke dalam
 Git dan telah di-_push_.
 
-Tenggat waktu pengumpulan adalah **13 September 2020 pukul 21:00**.
+Tenggat waktu pengumpulan adalah **13 September 2021 pukul 21:00**.
 
 ## Referensi
 
