@@ -78,7 +78,7 @@ Other shortcut keys can be viewed in the menu **Editor > Editor Settings > Short
 
 Next, you will get acquainted with the concepts of **Node** and **Scene**, which are fundamental components in games created using Godot.
 
-## Node and Scene
+## Node and Scene Concept
 
 Every object/entity in Godot is represented in a hierarchical structure known as **tree**. In Godot, a game object is represented as a **node**. You can think of a
 node as a collection of data and behaviour that represents a single functionality/responsibility, e.g. [`Sprite2D`](https://docs.godotengine.org/en/stable/classes/class_sprite2d.html)
@@ -99,6 +99,10 @@ A scene also can be put as child of other scene. If the scene is modified, the m
 
 ## Practice: Inspecting a Node
 
+On the filesystem tabs double click the `game.tscn` file. **Viewport** on the godot editor will show the visual of the scene. Focus on the **Scene** tab that shows the hierarchy of the `Game` node.
+
+Let's take a closer look at the important part from the scene that we currently open:
+
 ![](./images/godot_interface.png)
 
 1. **FileSystem Panel**: Displays the collection of files in the project. Currently, there are three scene files ending with `.tscn` and a folder containing image files in PNG format. It is important to remember that all assets in a Godot game must be placed in the game project folder.
@@ -115,4 +119,23 @@ A scene also can be put as child of other scene. If the scene is modified, the m
 > [!NOTE]
 > You can also see a sort of ruler at the outer edge of the Viewport. This ruler provides information about the coordinate positions within the scene. One more thing to note is that the point (0, 0) in the system that displays images on computers typically starts from the top-left corner of the plane, unlike what you may have learned in basic math, which starts from the bottom-left corner.
 
-5. **Playtest Buttons**: Includes buttons to run the game loop for the currently opened project or scene. If you press the **Play** button (shortcut: **F5**), a popup will appear if there is no Main Scene set. Please follow the instructions to set the Main Scene as the Main Scene for this game project. If you want to run the opened scene regardless of whether it is a Main Scene or not, you can use the **Play Scene** button (shortcut: **F6**).
+5. **Playtest Buttons**: Includes buttons to run the game loop for the currently opened project or scene. If you press the **Play** button (shortcut: **F5**), a popup will appear if there is no Main Scene set. Please follow the instructions to set the `Game` Scene as the Main Scene for this game project. If you want to run the opened scene regardless of whether it is a Main Scene or not, you can use the **Play Scene** button (shortcut: **F6**).
+
+Now try to open the `player.tscn` scene under the `player` directory. The viewport and other tabs will change. You will see that the `player` scene has one root node `Player` and two child nodes `AnimatedSprite2D` and `CollisionShape2D`. Click on the `Player` and focus on the inspector tab on the right:
+
+![](./images/player_inspect.png)
+
+The **Inspector** will show all the attributes that the `Player` node has. The attributes shown is all the attributes the `CharacterBody2D` has and additonal attributes that we define for the player. Remember how node can extend other node? Here the `CharacterBody2D` extend `CollisionObject2D`, `Node2D`, `CanvasItem` and `Node`. All the attributes of extended node is also shown on the inspector. This is what we called inheritance. The node inherit the attribute and behavior the node that it extends.
+
+Now let's inspect a different scene on the file `slime.tscn` and answer the following question:
+1. The `Slime` scene has a `Sprite2D` node while the `Player` node has an `AnimatedSprite2D` node. What's the purpose of this two scene?
+2. *Root Node* of `Slime` and `Player` has a different type. `RigidBody2D` for the `Slime` and `CharacterBody2D` for the `Player`, what's the difference and similarities between the two nodes?
+3. Try changing the `Speed` and `Jump Power` attributes of the player and try playing the `Game` scene. What effects does it do?
+4. Try ticking `disabled` attribute from the `Slime`'s `CollisionShape2D` node and try playing the `Game` scene. What happened to the slime and why?
+5. On the `Game` scene, try modifiying the `Position`, `Rotation`, and `Scale` of the `Slime`. What happened to the slime on the viewport?
+
+Reference:
+- [Introduction to Godot's Editor](https://docs.godotengine.org/en/4.6/getting_started/introduction/first_look_at_the_editor.html)
+- [Scenes and Nodes](https://docs.godotengine.org/en/4.6/getting_started/introduction/key_concepts_overview.html#scenes)
+- Materi tutorial pengenalan Godot Engine, kuliah Game Development semester
+  gasal 2021/2022 Fakultas Ilmu Komputer Universitas Indonesia.
