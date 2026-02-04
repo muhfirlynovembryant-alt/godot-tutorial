@@ -34,31 +34,33 @@ There are several steps you need to take before using this tutorial.
 
 ## Godot Editor Interface
 
+![](./images/annotated_godot_editor.png)
+
 The Godot Editor interface consists of several panels explained as follows:
 
-1. **FileSystem**: A tab for organizing and structuring files and assets within the open project.
-1. **Viewport**: A window that displays the scene in the game, code editor, or Asset Library, according to what is selected in **Workspaces**.
-2. **Workspaces**: A panel for switching what is displayed in the Viewport. There are four types:
+- **FileSystem**: A tab for organizing and structuring files and assets within the open project.
+- **Viewport**: A window that displays the scene in the game, code editor, or Asset Library, according to what is selected in **Workspaces**.
+- **Workspaces**: A panel for switching what is displayed in the Viewport. There are four types:
    - **2D**: Displays the scene in a two-dimensional view.
    - **3D**: Displays the scene in a three-dimensional view.
    - **Script**: Displays the code editor and debugger.
    - **AssetLib**: Displays a library of addons, scripts, and free assets.
 
-3. **Playtest Buttons**: A panel for running the project or scene.
-5. **Scene**: A tab that displays the hierarchy of objects in the active scene.
-6. **Import**: A window for setting import options for the selected asset file.
-7. **Inspector**: Displays specific details of the selected object in the scene. It generally includes a **Transform** component that manages the position, rotation, and scale of the selected object. Specific settings are also available depending on the type of selected object.
-8. **Node Tab**: Consists of two parts: **Signals** and **Groups**. **Signals** contain a list of events according to the type of selected object. **Groups** are used to group selected objects into certain categories for easier searching or organizing multiple similar objects.
-9. **Output**: Displays the console log from the Godot Engine.
-10. **Debugger**: Contains several tools for debugging when encountering issues during development. The available tools are:
+- **Playtest Buttons**: A panel for running the project or scene.
+- **Scene**: A tab that displays the hierarchy of objects in the active scene.
+- **Import**: A window for setting import options for the selected asset file.
+- **Inspector**: Displays specific details of the selected object in the scene. It generally includes a **Transform** component that manages the position, rotation, and scale of the selected object. Specific settings are also available depending on the type of selected object.
+- **Node Tab**: Consists of two parts: **Signals** and **Groups**. **Signals** contain a list of events according to the type of selected object. **Groups** are used to group selected objects into certain categories for easier searching or organizing multiple similar objects.
+- **Output**: Displays the console log from the Godot Engine.
+- **Debugger**: Contains several tools for debugging when encountering issues during development. The available tools are:
     - **Debugger**: Displays the runtime processes.
     - **Error**: Shows errors that occur while running the game.
     - **Profiler**: Displays profiles of each function call that occurs in the game.
     - **Monitor**: Displays performance parameters from the game, such as FPS (frames per second), physics collisions, etc.
     - **Video Mem**: Displays memory usage of the running game.
     - **Misc**: Shows other debug options.
-11. **Audio**: A tab that assists with audio settings in the game.
-12. **Animation**: A window for creating and managing timing and keyframes of the used animations.
+- **Audio**: A tab that assists with audio settings in the game.
+- **Animation**: A window for creating and managing timing and keyframes of the used animations.
 
 To speed up some operations in the Godot Editor, there are several shortcut keys you can use, such as:
 
@@ -96,6 +98,8 @@ A scene is saved on the filesystem and later can be dynamically loaded into the 
 A scene also can be put as child of other scene. If the scene is modified, the modification will be reflected to every instance of that scene.
 
 ## Practice: Inspecting a Node
+
+![](./images/godot_interface.png)
 
 1. **FileSystem Panel**: Displays the collection of files in the project. Currently, there are three scene files ending with `.tscn` and a folder containing image files in PNG format. It is important to remember that all assets in a Godot game must be placed in the game project folder.
 
