@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://e5miqs50178r"]
+[gd_scene format=4 uid="uid://e5miqs50178r"]
 
 [ext_resource type="Texture2D" uid="uid://b5xg4nioptru8" path="res://assets/spritesheet-backgrounds-default.png" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://mshm8gyuni" path="res://assets/spritesheet-tiles-default.png" id="2_feb5d"]
@@ -361,20 +361,20 @@ tile_size = Vector2i(64, 64)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_7jktm")
 
-[node name="Game" type="Node"]
+[node name="Game" type="Node" unique_id=1565674302]
 
-[node name="Background" type="Node2D" parent="."]
+[node name="Background" type="Node2D" parent="." unique_id=121674905]
 
-[node name="Sky" type="Parallax2D" parent="Background"]
+[node name="Sky" type="Parallax2D" parent="Background" unique_id=304923116]
 scroll_scale = Vector2(0.3, 0.3)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="Background/Sky"]
+[node name="TileMapLayer" type="TileMapLayer" parent="Background/Sky" unique_id=1500587913]
 tile_map_data = PackedByteArray("AAAAAAEAAAABAAEAAAABAAEAAAACAAEAAAACAAEAAAADAAEAAAADAAEAAAABAAEAAAAEAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAIAAAABAAMAAAABAAIAAAABAAMAAAACAAIAAAABAAMAAAADAAIAAAABAAMAAAAEAAIAAAABAAMAAAAAAP//AAABAAMAAAABAP//AAABAAMAAAACAP//AAABAAMAAAADAP//AAABAAMAAAAEAP//AAABAAMAAAA=")
 tile_set = SubResource("TileSet_feb5d")
 
-[node name="Platform" type="TileMapLayer" parent="."]
+[node name="Platform" type="TileMapLayer" parent="." unique_id=915349983]
 tile_map_data = PackedByteArray("AAAEAAgAAAALAAkAAAAFAAgAAAALAAkAAAAGAAgAAAALAAkAAAAHAAgAAAALAAkAAAAIAAgAAAALAAkAAAAJAAgAAAALAAkAAAAKAAgAAAALAAkAAAALAAgAAAALAAkAAAAMAAgAAAALAAkAAAANAAgAAAALAAkAAAAOAAgAAAALAAkAAAAPAAgAAAALAAkAAAAQAAgAAAALAAkAAAARAAgAAAALAAkAAAASAAgAAAALAAkAAAATAAgAAAALAAkAAAATAAkAAAAIAAkAAAASAAkAAAAIAAkAAAARAAkAAAAIAAkAAAAQAAkAAAAIAAkAAAAPAAkAAAAIAAkAAAAOAAkAAAAIAAkAAAANAAkAAAAIAAkAAAAMAAkAAAAIAAkAAAALAAkAAAAIAAkAAAAKAAkAAAAIAAkAAAAJAAkAAAAIAAkAAAAIAAkAAAAIAAkAAAAHAAkAAAAIAAkAAAAGAAkAAAAIAAkAAAAFAAkAAAAIAAkAAAAEAAkAAAAIAAkAAAADAAkAAAAIAAkAAAACAAkAAAAIAAkAAAABAAkAAAAIAAkAAAAAAAkAAAAIAAkAAAD//wkAAAAIAAkAAAD//woAAAAIAAkAAAAAAAoAAAAIAAkAAAABAAoAAAAIAAkAAAACAAoAAAAIAAkAAAADAAoAAAAIAAkAAAAEAAoAAAAIAAkAAAAFAAoAAAAIAAkAAAAGAAoAAAAIAAkAAAAHAAoAAAAIAAkAAAAIAAoAAAAIAAkAAAAJAAoAAAAIAAkAAAAKAAoAAAAIAAkAAAALAAoAAAAIAAkAAAAMAAoAAAAIAAkAAAANAAoAAAAIAAkAAAAOAAoAAAAIAAkAAAAPAAoAAAAIAAkAAAAQAAoAAAAIAAkAAAARAAoAAAAIAAkAAAASAAoAAAAIAAkAAAATAAoAAAAIAAkAAAD//wgAAAALAAkAAAAAAAgAAAALAAkAAAABAAgAAAALAAkAAAACAAgAAAALAAkAAAADAAgAAAALAAkAAAA=")
 tile_set = SubResource("TileSet_ryrav")
 
-[node name="Player" parent="." instance=ExtResource("3_fc0e3")]
+[node name="Player" parent="." unique_id=314403977 instance=ExtResource("3_fc0e3")]
 position = Vector2(173, 385)
