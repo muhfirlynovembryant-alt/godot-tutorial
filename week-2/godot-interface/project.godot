@@ -16,5 +16,32 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Basic 2D Movement"
 run/main_scene="uid://e5miqs50178r"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[input]
+
+jump={
+"deadzone": 0.5,
+"events": Array[InputEvent]([Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+])
+}
+
+[input_devices]
+
+virtual_controller/ios/enable_controller=true
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
+
+[xogot]
+
+project/editorState=[{
+"column": 39,
+"current": true,
+"line": 13,
+"path": "res://palestina.gd",
+"type": "file"
+}]
+project/breakpoints={}

@@ -1,7 +1,8 @@
-[gd_scene format=4 uid="uid://e5miqs50178r"]
+[gd_scene load_steps=11 format=4 uid="uid://e5miqs50178r"]
 
 [ext_resource type="Texture2D" uid="uid://b5xg4nioptru8" path="res://assets/spritesheet-backgrounds-default.png" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://mshm8gyuni" path="res://assets/spritesheet-tiles-default.png" id="2_feb5d"]
+[ext_resource type="PackedScene" uid="uid://cxjwkpv8cs1uk" path="res://Palestina.tscn" id="4_7jktm"]
 [ext_resource type="PackedScene" uid="uid://fckn5wm4adt7" path="res://slime.tscn" id="4_fc0e3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2o6t"]
@@ -374,29 +375,32 @@ distance = -1190.0
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fc0e3"]
 normal = Vector2(1, 0)
 
-[node name="Game" type="Node" unique_id=1565674302]
+[node name="Game" type="Node"]
 
-[node name="Background" type="Node2D" parent="." unique_id=121674905]
+[node name="Background" type="Node2D" parent="."]
 
-[node name="Sky" type="Parallax2D" parent="Background" unique_id=304923116]
+[node name="Sky" type="Parallax2D" parent="Background"]
 scroll_scale = Vector2(0.3, 0.3)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="Background/Sky" unique_id=1500587913]
+[node name="TileMapLayer" type="TileMapLayer" parent="Background/Sky"]
 tile_map_data = PackedByteArray("AAAAAAEAAAABAAEAAAABAAEAAAACAAEAAAACAAEAAAADAAEAAAADAAEAAAABAAEAAAAEAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAIAAAABAAMAAAABAAIAAAABAAMAAAACAAIAAAABAAMAAAADAAIAAAABAAMAAAAEAAIAAAABAAMAAAAAAP//AAABAAMAAAABAP//AAABAAMAAAACAP//AAABAAMAAAADAP//AAABAAMAAAAEAP//AAABAAMAAAA=")
 tile_set = SubResource("TileSet_feb5d")
 
-[node name="Platform" type="TileMapLayer" parent="." unique_id=915349983]
+[node name="Platform" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAEAAgAAAALAAkAAAAFAAgAAAALAAkAAAAGAAgAAAALAAkAAAAHAAgAAAALAAkAAAAIAAgAAAALAAkAAAAJAAgAAAALAAkAAAAKAAgAAAALAAkAAAALAAgAAAALAAkAAAAMAAgAAAALAAkAAAANAAgAAAALAAkAAAAOAAgAAAALAAkAAAAPAAgAAAALAAkAAAAQAAgAAAALAAkAAAARAAgAAAALAAkAAAASAAgAAAALAAkAAAATAAgAAAALAAkAAAAAAAgAAAALAAkAAAABAAgAAAALAAkAAAACAAgAAAALAAkAAAADAAgAAAALAAkAAAD//wgAAAALAAkAAAD//wkAAAAIAAkAAAD//woAAAAIAAkAAAAAAAoAAAAIAAkAAAABAAoAAAAIAAkAAAACAAoAAAAIAAkAAAABAAkAAAAIAAkAAAAAAAkAAAAIAAkAAAACAAkAAAAIAAkAAAADAAkAAAAIAAkAAAAEAAkAAAAIAAkAAAAFAAkAAAAIAAkAAAAGAAkAAAAIAAkAAAAHAAkAAAAIAAkAAAAIAAkAAAAIAAkAAAAJAAkAAAAIAAkAAAAKAAkAAAAIAAkAAAALAAkAAAAIAAkAAAALAAoAAAAIAAkAAAAMAAoAAAAIAAkAAAANAAoAAAAIAAkAAAAOAAoAAAAIAAkAAAAOAAkAAAAIAAkAAAAPAAkAAAAIAAkAAAAQAAkAAAAIAAkAAAARAAoAAAAIAAkAAAASAAoAAAAIAAkAAAATAAoAAAAIAAkAAAATAAkAAAAIAAkAAAASAAkAAAAIAAkAAAARAAkAAAAIAAkAAAANAAkAAAAIAAkAAAAMAAkAAAAIAAkAAAAPAAoAAAAIAAkAAAAQAAoAAAAIAAkAAAAJAAoAAAAIAAkAAAAIAAoAAAAIAAkAAAAKAAoAAAAIAAkAAAAHAAoAAAAIAAkAAAAGAAoAAAAIAAkAAAAFAAoAAAAIAAkAAAAEAAoAAAAIAAkAAAADAAoAAAAIAAkAAAAOAAcAAAAJAAkAAAAOAAYAAAAJAAkAAAARAAYAAAAKAAkAAAARAAcAAAAKAAkAAAAPAAcAAAAIAAkAAAAQAAcAAAAIAAkAAAAQAAYAAAAIAAkAAAAPAAYAAAAIAAkAAAAOAAUAAAAMAAkAAAARAAUAAAANAAkAAAAQAAUAAAALAAkAAAAPAAUAAAALAAkAAAAFAAcAAAANAAkAAAACAAcAAAAMAAkAAAADAAcAAAALAAkAAAAEAAcAAAALAAkAAAAIAAYAAAAQAAkAAAAJAAYAAAARAAkAAAAKAAYAAAARAAkAAAALAAYAAAARAAkAAAAMAAYAAAAAAAoAAAA=")
 tile_set = SubResource("TileSet_ryrav")
 
-[node name="Boundary" type="StaticBody2D" parent="." unique_id=2067949862]
+[node name="Boundary" type="StaticBody2D" parent="."]
 
-[node name="RightBoundary" type="CollisionShape2D" parent="Boundary" unique_id=1131362625]
+[node name="RightBoundary" type="CollisionShape2D" parent="Boundary"]
 shape = SubResource("WorldBoundaryShape2D_feb5d")
 
-[node name="LeftBoundary" type="CollisionShape2D" parent="Boundary" unique_id=1613148984]
+[node name="LeftBoundary" type="CollisionShape2D" parent="Boundary"]
 position = Vector2(-36.04, 0)
 shape = SubResource("WorldBoundaryShape2D_fc0e3")
 
-[node name="Slime" parent="." unique_id=739567927 instance=ExtResource("4_fc0e3")]
+[node name="Slime" parent="." instance=ExtResource("4_fc0e3")]
 position = Vector2(721, 342)
+
+[node name="Node2D" parent="." instance=ExtResource("4_7jktm")]
+position = Vector2(257, 201)
